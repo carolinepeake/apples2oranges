@@ -132,7 +132,9 @@ export function ApplesBoard({ ctx, G, moves, playerID, sendChatMessage, chatMess
           </StyledTypography>
         </StyledContainer>}
 
-        <Box sx={{position: 'fixed', height: '600px', maxWidth: '30%', borderStyle: 'solid', right: '10%', top: '5rem', background: 'rgba(0,0,0, 0.8)'}}>
+        <Box sx={{position: 'fixed',
+         height: '80vh',
+         maxWidth: '30%', borderStyle: 'solid', right: '10%', top: '15%', background: 'rgba(0,0,0, 0.8)'}}>
           <div style={{
             overflowWrap: "break-word",
             overflowY: "scroll",

@@ -21,7 +21,7 @@ export default function Hero() {
         component="h1"
         position="absolute"
         right="2%"
-        top="20%"
+        top="15%"
         sx={{
           textTransform: 'uppercase',
           fontSize: {

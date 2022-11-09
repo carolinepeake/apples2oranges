@@ -19,7 +19,6 @@ export const StyledContainer = styled(Box)({
 
 export const StyledList = styled(List) ({
   width: '100%',
-
   marginLeft: '1.5em',
 })
 

@@ -1,6 +1,5 @@
 import { styled } from '@mui/material/styles';
 import { Box } from '@mui/material';
-import { Routes, Route, Outlet } from "react-router-dom";
 
 export const StyledContainer = styled(Box)({
   transform: 'translate(-50%,-50%)',

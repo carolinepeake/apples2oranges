@@ -64,7 +64,7 @@ const Lobby = () => {
   return (
     <StyledComponentContainer>
       <Button
-        onClick={(e) => navigate(-1)}
+        onClick={(e) => navigate('/')}
         variant="contained"
         sx={{ position: 'absolute', zIndex: '2', top: '5%', right: '5%', minWidth: '10px', height: '1.0em', width: '1.0em', fontSize: { xs: '1.5rem', md: '2.5rem', lg: '3rem', xl: '4rem' }, padding: '0.1em', borderRadius: '4px', color: 'white', '&:hover': { boxShadow: '0 0 20px orange', scale: '1.25', transition: 'scale 5ms ease' } }}
       >&times;</Button>

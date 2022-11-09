@@ -35,7 +35,7 @@ export const Dashboard = () => {
             Join a Game
           </StyledDashButtons>
         </Link>
-        <Link to={"creategame"} style={{ textDecoration: "none" }}>
+        <Link to={"/creategame"} style={{ textDecoration: "none" }}>
           <StyledDashButtons
             sx={{
               fontSize: {

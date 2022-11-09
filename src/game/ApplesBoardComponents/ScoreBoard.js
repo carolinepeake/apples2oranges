@@ -28,7 +28,7 @@ export default function ScoreBoard({
   var currStandings = Object.values(standings).sort((a, b) => (b.winningCards.length - a.winningCards.length));
 
   return (
-    <StyledContainer>
+    <StyledContainer sx={{ zIndex: '2' }}>
       <StyledTypographyH1>
         Leader Board
       </StyledTypographyH1>

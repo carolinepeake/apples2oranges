@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Dashboard from "./features/Dashboard";
 import { CreateGame } from "./features/CreateGame";
 import Lobby from "./features/Lobby";
@@ -14,6 +14,7 @@ import CustomCards from "./features/custom/CustomCards";
 import { Apples2Oranges } from './features/gameRoom';
 // import BoomBox from './features/Spotify/BoomBox';
 import Layout from './UI/Layout';
+import { StyledContainer } from './styles/appStyles.js';
 
 export const code = new URLSearchParams(window.location.search).get('code');
 
@@ -27,7 +28,8 @@ export default function App({ gameServer }) {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout user={user} setUser={setUser} />}> | {" "}
+        <Route path="/" element={<Layout user={user} setUser={setUser} sx={{zIndex: '-2'}}/>}> | {" "}
+        <Route element={<StyledContainer children={<Outlet />}/>}>
           <Route index element={<Dashboard />} />
           <Route
             path="user/login"
@@ -47,8 +49,10 @@ export default function App({ gameServer }) {
           <Route path="joingame" element={<Lobby />} />
           <Route path="waitingroom/:matchID" element={<WaitingRoom />} />
         </Route>
-        <Route path="/game/apples/:matchID" element={<Apples2Oranges />} />
-        <Route path="*" element={<NoMatch />} />
+
+          <Route path="game/apples/:matchID" element={<Apples2Oranges />} />
+          <Route path="*" element={<NoMatch />} />
+        </Route>
       </Routes>
       {/* <BoomBox code={code} /> */}
     </>

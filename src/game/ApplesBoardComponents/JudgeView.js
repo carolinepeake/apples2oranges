@@ -54,7 +54,7 @@ export default function JudgeView({G, ctx, moves, matchData }) {
             )}
           </span>
           </StyledTypography>
-          <Box sx={{width: '80%'g}}>
+          <Box sx={{width: '80%'}}>
           {G.activePrompt.body
           && (playersRemaining === 0
               ? answers
