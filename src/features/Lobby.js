@@ -127,7 +127,7 @@ const Lobby = () => {
           </Box>
           <StyledButton
             variant="contained"
-            onClick={() => joinMatchHandler(sessionCode)}
+            onClick={(e) => joinMatchHandler(sessionCode)}
           >
             Join
           </StyledButton>
@@ -190,7 +190,7 @@ const Lobby = () => {
                       boxShadow: '0px 0px 10px 10px orange',
                     },
                   }}
-                  onClick={(e) => joinMatchHandler(e)}
+                  onClick={(e) => joinMatchHandler(match.matchID)}
                 >
                   Join
                 </Button>
