@@ -10,14 +10,14 @@ import { theme } from "./styles/theme";
 import "./styles/index.css";
 // import reportWebVitals from './reportWebVitals';
 
-const ENV = process.env.REACT_APP_ENV;
+// const ENV = process.env.REACT_APP_ENV;
 
-let SERVER;
-if (ENV === "dev") {
-  SERVER = `http://${window.location.hostname}:${process.env.REACT_APP_BG_PORT}`; // Local
-} else {
-  SERVER = `https://${window.location.hostname}`; // Prod
-}
+// let SERVER;
+// if (ENV === "dev") {
+//   SERVER = `http://${window.location.hostname}:${process.env.REACT_APP_BG_PORT}`; // Local
+// } else {
+//   SERVER = `https://${window.location.hostname}`; // Prod
+// }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,7 +25,9 @@ root.render(
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Provider store={store}>
-          <App gameServer={SERVER} />
+          <App
+          // gameServer={SERVER}
+           />
         </Provider>
       </BrowserRouter>
     </ThemeProvider>
