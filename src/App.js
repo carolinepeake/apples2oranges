@@ -12,7 +12,7 @@ import LoginPage from "./features/login/LoginPage";
 import CreateUserPage from "./features/login/CreateUserPage";
 import CustomCards from "./features/custom/CustomCards";
 import { Apples2Oranges } from './features/gameRoom';
-// import BoomBox from './features/Spotify/BoomBox';
+import BoomBox from './features/Spotify/BoomBox';
 import Layout from './UI/Layout';
 import { StyledContainer } from './styles/appStyles.js';
 
@@ -54,7 +54,7 @@ export default function App({ gameServer }) {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
-      {/* <BoomBox code={code} /> */}
+      <BoomBox code={code} />
     </>
   );
 }
