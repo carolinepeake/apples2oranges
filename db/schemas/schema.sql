@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS CardGame;
-CREATE DATABASE CardGame;
+DROP DATABASE IF EXISTS cardgame;
+CREATE DATABASE cardgame;
 
 -- \c cardgame;
 
