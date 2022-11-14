@@ -93,7 +93,7 @@ To support the upload of user avatar pictures, you will need to create a Cloudin
 6. Run client, server, and boardgame-server each in its own terminal
    ```sh
     npm start
-    npm run postgres-server or postgres-server-dev (development mode)
+    npm run server or server-dev (development mode)
     npm run bg-server
    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

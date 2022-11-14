@@ -45,8 +45,8 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "bg-server": "nodemon -r esm server/bgserver.js",
-        "express-server": "node server/index.js",
-        "express-server-dev": "npx nodemon --watch server server/index.js"
+        "server": "node server/index.js",
+        "server-dev": "npx nodemon --watch server server/index.js"
     },
     "eslintConfig": {
         "extends": [
