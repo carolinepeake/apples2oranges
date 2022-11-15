@@ -17,8 +17,10 @@
     <a href="https://www.cardsagainsthumanity.com/about">Learn more about the game!!!</a>
     <br />
     <br />
-   ·
-    <a href="https://github.com/ph-castle/apples2oranges">View Demo(DEMO LINK HERE!!!!)</a>
+    
+   ·<!-- DEMO LINK 
+      <a href="https://github.com/ph-castle/apples2oranges">View Demo(DEMO LINK HERE!!!!)</a>
+    -->
 
   </p>
 </div>
