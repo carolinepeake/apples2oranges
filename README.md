@@ -212,7 +212,7 @@ To support the upload of user avatar pictures, you will need to create a Cloudin
       </a>
     </td>
     <td>
-      <a href="https://www.linkedin.com/in/caroline-k-peake/">  <!-- Caroline    -->
+      <a href="https://www.linkedin.com/in/carolinepeake/">  <!-- Caroline    -->
         <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
       </a>
     </td>
